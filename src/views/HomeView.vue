@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
-import { useCounterStore } from "@/stores/counter";
-import { storeToRefs } from "pinia";
+  import TheWelcome from '../components/TheWelcome.vue'
+  import { useCounterStore } from '@/stores/counter'
+  import { storeToRefs } from 'pinia'
 
-const counterStore = useCounterStore();
-const { count } = storeToRefs(counterStore);
-const { increment } = counterStore;
+  const counterStore = useCounterStore()
+  const { count } = storeToRefs(counterStore)
+  const { increment } = counterStore
 </script>
 
 <template>
@@ -17,7 +17,7 @@ const { increment } = counterStore;
 </template>
 
 <style scoped lang="scss">
-.test-css {
-  color: $test-color;
-}
+  .test-css {
+    color: $test-color;
+  }
 </style>
