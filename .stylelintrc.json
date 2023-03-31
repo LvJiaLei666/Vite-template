@@ -1,0 +1,45 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-standard-vue/scss",
+    "stylelint-config-clean-order",
+    "stylelint-prettier/recommended",
+    "stylelint-config-prettier-scss"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "no-empty-source": null,
+    "no-descending-specificity": null,
+    "function-url-quotes": [
+      "always",
+      {
+        "except": [
+          "empty"
+        ]
+      }
+    ],
+    "selector-class-pattern": "^([a-z0-9]+[A-Z]*)((-|_){0,2}[a-z0-9]+[A-Z]*)*$",
+    "scss/double-slash-comment-whitespace-inside": "never",
+    "max-nesting-depth": 5,
+    "selector-max-compound-selectors": 5,
+    "selector-no-vendor-prefix": [
+      true,
+      {
+        "ignoreSelectors": [
+          "/-webkit-.*/",
+          "/-moz-.*/"
+        ]
+      }
+    ]
+  },
+  "ignoreFiles": [
+    "**/*.min.css",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.tsx",
+    "**/*.ts",
+    "**/*.json"
+  ]
+}
