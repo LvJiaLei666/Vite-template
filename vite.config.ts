@@ -14,28 +14,28 @@ export default defineConfig({
     vueJsx(),
     // element 组件自动导入
     AutoImport({
-      resolvers: [ElementPlusResolver()]
+      resolvers: [ElementPlusResolver()],
     }),
     Components({
       resolvers: [
         ElementPlusResolver({
-          importStyle: 'sass'
+          importStyle: 'sass',
           // directives: true,
           // version: "2.1.5",
-        })
-      ]
-    })
+        }),
+      ],
+    }),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "@/assets/styles/element/index.scss" as *;`
-      }
-    }
-  }
+        additionalData: `@use "@/assets/styles/element/index.scss" as *;`,
+      },
+    },
+  },
 })

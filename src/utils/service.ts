@@ -14,15 +14,15 @@ const service = axios.create({
     version: '1.0.1', // 接口的版本号
     Authorization: 'Bearer ' + token, // 向后台发送的token
     get: {
-      'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'
+      'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
     },
     post: {
-      'Content-Type': 'application/json;charset=utf-8'
-    }
+      'Content-Type': 'application/json;charset=utf-8',
+    },
   },
   validateStatus() {
     return true
-  }
+  },
 })
 
 // 防止重复提交 利用axios的cancelToken

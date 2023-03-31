@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
-
+  import { RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -8,7 +7,7 @@ import { RouterView } from "vue-router";
 </template>
 
 <style scoped lang="scss">
-body {
-  background-color: #3496eb;
-}
+  body {
+    background-color: #3496eb;
+  }
 </style>
