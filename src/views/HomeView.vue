@@ -13,11 +13,15 @@
     <TheWelcome />
     <el-button type="primary" @click="increment">测试{{ count }}</el-button>
     <div class="test-css">测试代码{{ counterStore.doubleCount }}</div>
+    <div class="s-=3">sdfjdsafksajfkjasdk
+    fdskl</div>
   </main>
 </template>
 
 <style scoped lang="scss">
   .test-css {
+
+
     color: $test-color;
   }
 </style>
