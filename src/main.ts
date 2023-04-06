@@ -6,10 +6,13 @@ import App from './App.vue'
 import router from './router'
 import '@/mock'
 import '@/assets/main.css'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 const app = createApp(App)
-
-app.use(createPinia())
+// store持久化
+const store = createPinia()
+store.use(piniaPluginPersistedstate)
+app.use(store)
 app.use(router)
 app.use(ElementPlus)
 

@@ -24,7 +24,6 @@
   import type { loginModel, userInfo } from '@/api/Login/Login'
   import { computed, onMounted, ref } from 'vue'
   import { getUserInfo, login } from '@/api/Login/Login'
-  import { useRequest } from 'vue-request'
 
   const loginFormModel = ref<loginModel>({ accountNumber: '', password: '' })
 
@@ -38,10 +37,4 @@
         console.log(err)
       })
   }
-
-  const { data, run } = useRequest(getUserInfo)
-
-  onMounted(() => {
-    console.log(data)
-  })
 </script>
