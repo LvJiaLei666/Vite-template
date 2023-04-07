@@ -14,8 +14,6 @@ export const useCounterStore = defineStore(
     return { count, doubleCount, increment }
   },
   {
-    persist: {
-      enabled: true,
-    },
+    persist: {},
   }
 )
