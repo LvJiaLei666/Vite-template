@@ -1,6 +1,6 @@
 // styles/element/index.scss
 /* 只需要重写你需要的即可 */
-@forward "../../../../node_modules/element-plus/theme-chalk/src/common/var" with (
+@forward "element-plus/theme-chalk/src/common/var" with (
   $colors: (
     'primary': ('base': #3496eb)
   ),
